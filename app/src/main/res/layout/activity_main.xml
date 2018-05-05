@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/scrollview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/name_hint"
+            android:inputType="textCapWords"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="@string/coffee_heading"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="1dp">
+
+                <TextView
+                    android:id="@+id/cappuccino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding"
+                    android:text="@string/cappucchino"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/decrement"
+                        android:layout_width="49dp"
+                        android:layout_height="match_parent"
+                        android:onClick="decrement1"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/quantity_text_view1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="8dp"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/increment"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+
+                        android:onClick="increment1"
+                        android:text="+" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/expresso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding"
+                    android:text="@string/expresso"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/decrement2"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="decrement2"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/quantity_text_view2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/increment2"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="increment2"
+                        android:text="+" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Macchiato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding"
+                    android:text="@string/macchiato"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/macchiato_decrement"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="decrement3"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/quantity_text_view3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/macchiato_increment"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="increment3"
+                        android:text="+" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Ristretto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding"
+                    android:text="@string/ristretto"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ristretto_decrement"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="decrement4"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/quantity_text_view4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/ristretto_increment"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="increment4"
+                        android:text="+" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/topping"
+            android:textAllCaps="true"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/vanilla_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="@string/vanilla"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/chocolate_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="@string/chocolate"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/whippedcream_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="@string/whipped_cream"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/mint_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:text="@string/mint"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/buttonview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="checkOrder"
+            android:text="@string/button1" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Just_Java</string>
+    <string name="name_hint">Name</string>
+    <string name="coffee_heading">Coffees Available</string>
+    <string name="cappucchino">Cappuchino ($5 EACH)</string>
+    <string name="expresso">Expresso ($10 EACH)</string>
+    <string name="macchiato">Macchiato ($15 EACH)</string>
+    <string name="ristretto">Ristretto ($20 EACH)</string>
+    <string name="topping">Toppings Needed:</string>
+    <string name="vanilla">Vanilla</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="mint">Mint</string>
+    <string name="button1">Check for Summary</string>
+    <string name="order">Order Summary</string>
+    <string name="title">Title</string>
+    <string name="your_orders">Your Orders</string>
+    <string name="submit">Send Mail</string>
+
+</resources>
